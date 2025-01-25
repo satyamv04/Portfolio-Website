@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #333;
+        }
+
+        header {
+            background: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #fff;
+            color: #ff6f61;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin: 0 0 10px;
+            color: #555;
+        }
+
+        footer {
+            background: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Template</h1>
+        <p>Your Professional Showcase</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card" id="about">
+            <h2>About Me</h2>
+            <p>This is a portfolio template designed to showcase your professional achievements, education, and skills. Customize it to fit your profile!</p>
+        </section>
+
+        <section class="card" id="education">
+            <h2>Education</h2>
+            <p><strong>Your University</strong></p>
+            <p>Bachelor of Technology in Your Field (Year-Year)</p>
+            <p>CGPA: Your CGPA</p>
+            <p><strong>Your School</strong></p>
+            <p>Class XII: Your Percentage (Year)</p>
+            <p>Class X: Your Percentage (Year)</p>
+        </section>
+
+        <section class="card" id="experience">
+            <h2>Experience</h2>
+            <p><strong>Your Job/Internship Title</strong></p>
+            <p>Your Company (Month Year - Month Year)</p>
+            <ul>
+                <li>Describe your key responsibilities and achievements here.</li>
+                <li>Highlight impactful contributions and projects.</li>
+            </ul>
+        </section>
+
+        <section class="card" id="projects">
+            <h2>Projects</h2>
+            <p><strong>Project Title 1</strong></p>
+            <p>Role: Your Role</p>
+            <ul>
+                <li>Describe the project and your contribution to it.</li>
+                <li>Mention technologies and tools used.</li>
+            </ul>
+            <p><strong>Project Title 2</strong></p>
+            <p>Role: Your Role</p>
+            <ul>
+                <li>Describe the project and your contribution to it.</li>
+                <li>Mention technologies and tools used.</li>
+            </ul>
+        </section>
+
+        <section class="card" id="skills">
+            <h2>Skills</h2>
+            <p><span>Skill 1</span> <span>Skill 2</span> <span>Skill 3</span> <span>Skill 4</span> <span>Skill 5</span></p>
+        </section>
+
+        <section class="card" id="contact">
+            <h2>Contact Me</h2>
+            <p>Phone: Your Phone Number</p>
+            <p>Email: Your Email Address</p>
+            <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Year Your Name. All Rights Reserved. | <a href="#">Back to Top</a></p>
+    </footer>
+</body>
+</html>
